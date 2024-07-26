@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://derotar.github.io/codingwithsanya",
+  "homepage": "https://derotar.github.io/codingwithsanya/",
   "scripts": {
     "dev": "vite",
     "build": "rm -rf ./dist && vite build",
