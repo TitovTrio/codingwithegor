@@ -11,7 +11,7 @@ const pie = new Chart(ctx, {
       {
         label: "# of Votes",
         data: lohData,
-        backgroundColor: ["pink", "yellow"],
+        backgroundColor: ["blue", "red"],
       },
     ],
   },
@@ -29,13 +29,13 @@ const EgorLohButton = document.getElementById("Egor-loh");
 const EgorNeLohButton = document.getElementById("Egor-ne-loh");
 EgorNeLohButton.onclick = function (e) {
   lohData[0] += 1;
-  showBackgroundText("Egor ne loh!!!", "pink");
+  showBackgroundText("Egor ne loh!!!", "blue");
   updateData(pie, lohData);
 };
 
 EgorLohButton.onclick = function (e) {
   lohData[1] += 1;
-  showBackgroundText("Egor loh!!!", "yellow");
+  showBackgroundText("Egor loh!!!", "red");
 
   updateData(pie, lohData);
 };
