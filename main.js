@@ -6,7 +6,7 @@ const lohData = [1, 1];
 const pie = new Chart(ctx, {
   type: "pie",
   data: {
-    labels: ["Sanya ne loh", "Sanya loh"],
+    labels: ["Egor ne loh", "Egor loh"],
     datasets: [
       {
         label: "# of Votes",
@@ -25,17 +25,17 @@ function updateData(chart, newData) {
   chart.update();
 }
 
-const sanyaLohButton = document.getElementById("sanya-loh");
-const sanyaNeLohButton = document.getElementById("sanya-ne-loh");
-sanyaNeLohButton.onclick = function (e) {
+const EgorLohButton = document.getElementById("Egor-loh");
+const EgorNeLohButton = document.getElementById("Egor-ne-loh");
+EgorNeLohButton.onclick = function (e) {
   lohData[0] += 1;
-  showBackgroundText("sanya ne loh!!!", "pink");
+  showBackgroundText("Egor ne loh!!!", "pink");
   updateData(pie, lohData);
 };
 
-sanyaLohButton.onclick = function (e) {
+EgorLohButton.onclick = function (e) {
   lohData[1] += 1;
-  showBackgroundText("sanya loh!!!", "yellow");
+  showBackgroundText("Egor loh!!!", "yellow");
 
   updateData(pie, lohData);
 };
